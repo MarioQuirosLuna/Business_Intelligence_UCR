@@ -17,11 +17,8 @@
    
    ### 🏆 Specifications.
    
-   - 1
-   - 2
-   - 3
-   - 4
-   - 5
+   - [Proyecto-AdministracionDeBasesDeDatosUCR-2022.pdf](https://github.com/MarioQuirosLuna/Business_Intelligence_UCR/blob/master/IF5100%20Proyecto%20Final.pdf)
+
 
    ### ⭐ Languages.
 
