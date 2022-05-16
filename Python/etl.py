@@ -21,13 +21,13 @@ def connectSQLServer():
 
 
 def getProducts(cursorPosgreSQL):
-    query = "SELECT Product_Id, Name, (SELECT COUNT(Number_Of_Products) FROM SALES.Sales_Detail WHERE Sales_Detail.Product_Id = tb_Products.Product_Id GROUP BY Product_Id) AS Amount_Of_Sales, Price FROM PRODUCTS.tb_Products"
+    query = "SELECT Product_Id, Name, Price FROM PRODUCTS.tb_Products"
     cursorPosgreSQL.execute(query)
     return cursorPosgreSQL.fetchall()
 
 
 def getSalesHead(cursorPosgreSQL):
-    query = "SELECT Sales_Head_Id, Paid_In_Cash, Date_Of_Sale FROM SALES.Sales_Head"
+    query = "SELECT Sales_Head_Id, Paid_In_Cash FROM SALES.Sales_Head"
     cursorPosgreSQL.execute(query)
     return cursorPosgreSQL.fetchall()
 
@@ -46,9 +46,9 @@ def createTables(cursorSQLServer):
 
 def loadDIMProducts(cursorSQLServer, products):
     for aux in products:
-        query = 'INSERT INTO SALES.DIM_Products VALUES(?,?,?,?);'
+        query = 'INSERT INTO SALES.DIM_Products VALUES(?,?,?);'
         cursorSQLServer.execute(
-            query, (aux[0], aux[1], aux[2], aux[3]))
+            query, (aux[0], aux[1], aux[2]))
 
 
 def addDescription(val):
@@ -60,9 +60,11 @@ def addDescription(val):
 
 def loadDIMSalesHead(cursorSQLServer, salesHead):
     for aux in salesHead:
-        query = 'INSERT INTO SALES.DIM_Sales_Head VALUES(?,?,?,?);'
+        query = 'INSERT INTO SALES.DIM_Sales_Head VALUES(?,?,?);'
         cursorSQLServer.execute(
-            query, (aux[0], aux[1], addDescription(aux[1]), aux[2]))
+            query, (aux[0], aux[1], addDescription(aux[1])))
+        if aux[0] == 50: #break for testing
+            break
         print(aux[0])
 
 
