@@ -38,23 +38,52 @@
 
 ## 🚀 Getting Started.
 
+   # ETL Python
+
    ### 📌 Prerequisites and dependencies.
    
-   - a
-   - b
+   - Need install virtualenv package
+   ```
+      pip install virtualenv
+   ```
+   - Create virtual environment for run project with command line
+      * On your project folder run command
+   ```
+      virtualenv -p python3 env
+   ```
+      * This command create new virtual environment for run your project.
    - c
 
    ### 👉 Installation.
    
-   - a
-   - b
-   - c
+   - Install the requirements.txt file dependencies. 
+   ```
+      pip install dependency1 dependency2 dependency3
+   ```
 
    ### ⚡ Executing.
    
-   - a
-   - b
-   - c
+   - Create a .env file with the credentials of the databases that you are using.
+   ```
+      POSGRESQL_HOST=""
+      POSGRESQL_USER=""
+      POSGRESQL_PASS=""
+      POSGRESQL_DATABASE=""
+
+      SQLSERVER_HOST=""
+      SQLSERVER_DATABASE=""
+      SQLSERVER_USER=""
+      SQLSERVER_PASS=""
+   ```
+   - Execute the virtual environment 
+      * On your local folder run script active
+   ```
+      .\env\Scripts\activate 
+   ```
+   - Run ETL Script
+   ```python
+      python etl.py
+   ```
 
 ## ☕ Collaborators.
 
