@@ -41,7 +41,10 @@ CREATE TABLE SALES.DIM_Products
 		FOREIGN KEY (Sales_Head_Date_id) REFERENCES SALES.DIM_DATES(Sales_Head_Date_id)
 	)
 
-select * from SALES.DIM_Products
-order by Amount_Of_Sales Desc
 
-select * from SALES.DIM_Sales_Head
+
+SELECT * FROM SALES.DIM_Sales_Head
+SELECT * FROM SALES.DIM_Dates
+SELECT * FROM SALES.DIM_Products
+SELECT * FROM SALES.FACT_SALES
+
