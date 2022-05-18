@@ -32,16 +32,28 @@ def getSalesHead(cursorPosgreSQL):
     return cursorPosgreSQL.fetchall()
 
 
+def getDates(cursorPosgreSQL):
+    query = "SELECT Sales_Head_Id, Date_Of_Sale FROM SALES.Sales_Head"
+    cursorPosgreSQL.execute(query)
+    return cursorPosgreSQL.fetchall()
+
+
+def getFactData(cursorPosgreSQL):
+    query = "SELECT SD.Product_Id, SH.Sales_Head_Id, SD.Number_Of_Products, SD.SubTotal_Price, SH.Total_Price FROM SALES.Sales_Head AS SH INNER JOIN SALES.Sales_Detail AS SD ON SH.Sales_Head_Id = SD.Sales_Head_Id"
+    cursorPosgreSQL.execute(query)
+    return cursorPosgreSQL.fetchall()
+
+
 def dropTables(cursorSQLServer):
     query = 'EXEC sp_DropTables;'
     cursorSQLServer.execute(query)
-    print("Drop tables successfull")
+    print("Drop tables successfully")
 
 
 def createTables(cursorSQLServer):
     query = 'EXEC sp_CreateTables'
     cursorSQLServer.execute(query)
-    print("Create table DIM_Products, DIM_Sales_Head, FACT_SALES successfull")
+    print("Create table DIM_Products, DIM_Sales_Head, DIM_Dates, FACT_SALES successfully")
 
 
 def loadDIMProducts(cursorSQLServer, products):
@@ -49,6 +61,7 @@ def loadDIMProducts(cursorSQLServer, products):
         query = 'INSERT INTO SALES.DIM_Products VALUES(?,?,?);'
         cursorSQLServer.execute(
             query, (aux[0], aux[1], aux[2]))
+    print("Products load successfully")
 
 
 def addDescription(val):
@@ -59,13 +72,43 @@ def addDescription(val):
 
 
 def loadDIMSalesHead(cursorSQLServer, salesHead):
+    count = 0
     for aux in salesHead:
         query = 'INSERT INTO SALES.DIM_Sales_Head VALUES(?,?,?);'
         cursorSQLServer.execute(
             query, (aux[0], aux[1], addDescription(aux[1])))
-        if aux[0] == 50: #break for testing
-            break
-        print(aux[0])
+        count += 1
+        print("Sales Head ", count)
+        # if count == 55:  # break for testing
+        #    break
+    print("SalesHead load successfully")
+
+
+def loadDIMDates(cursorSQLServer, dates):
+    count = 0
+    for aux in dates:
+        query = 'INSERT INTO SALES.DIM_DATES VALUES(?,?,?,?)'
+        cursorSQLServer.execute(
+            query, (aux[0], aux[1], aux[1].strftime('%Y'), aux[1].strftime('%m')))
+        count += 1
+        print("Date ", count)
+        # if count == 50:  # break for testing
+        #    break
+    print("Dates load successfully")
+
+
+def loadDIMFactData(cursorSQLServer, factData):
+    count = 0
+    for aux in factData:
+        print(aux)
+        query = 'INSERT INTO SALES.FACT_SALES VALUES(?,?,?,?,?,?,?)'
+        cursorSQLServer.execute(
+            query, (count, aux[0], aux[0], aux[1], aux[2], aux[3], aux[4]))
+        count += 1
+        print("Fact ", count)
+        # if count == 50:  # break for testing
+        #    break
+    print("Fact load successfully")
 
 
 try:
@@ -76,6 +119,8 @@ try:
             "\n*****************************\n Extract data in progress...\n*****************************\n")
         products = getProducts(cursorPosgreSQL)
         salesHead = getSalesHead(cursorPosgreSQL)
+        dates = getDates(cursorPosgreSQL)
+        factData = getFactData(cursorPosgreSQL)
 
         connectionSQLServer = connectSQLServer()
         print('Connection successfully to SQLServer')
@@ -89,8 +134,10 @@ try:
                 "\n*****************************\n Load data in progress...\n*****************************\n")
             loadDIMProducts(cursorSQLServer, products)
             loadDIMSalesHead(cursorSQLServer, salesHead)
+            loadDIMDates(cursorSQLServer, dates)
+            loadDIMFactData(cursorSQLServer, factData)
 
-            print("Load data successfull")
+            print("Load data successfully")
 
 except Exception as ex:
     print("Error with connection ", ex)
