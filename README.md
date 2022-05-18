@@ -79,7 +79,7 @@
       SQLSERVER_PASS=""
    ```
    - Execute the virtual environment 
-      * On your local folder run script active
+      * On your local folder run script activate
    ```
       .\env\Scripts\activate 
    ```
