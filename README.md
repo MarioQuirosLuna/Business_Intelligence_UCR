@@ -43,20 +43,23 @@
    ### 📌 Prerequisites and dependencies.
    
    - Need install virtualenv package
+
    ```
       pip install virtualenv
    ```
+
    - Create virtual environment for run project with command line
       * On your project folder run command
+      * This command create new virtual environment for run your project.
+
    ```
       virtualenv -p python3 env
    ```
-      * This command create new virtual environment for run your project.
-   - c
 
    ### 👉 Installation.
    
    - Install the requirements.txt file dependencies. 
+   
    ```
       pip install dependency1 dependency2 dependency3
    ```
