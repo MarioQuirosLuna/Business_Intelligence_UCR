@@ -100,14 +100,11 @@ def loadDIMDates(cursorSQLServer, dates):
 def loadDIMFactData(cursorSQLServer, factData):
     count = 0
     for aux in factData:
-        print(aux)
         query = 'INSERT INTO SALES.FACT_SALES VALUES(?,?,?,?,?,?,?)'
         cursorSQLServer.execute(
-            query, (count, aux[0], aux[0], aux[1], aux[2], aux[3], aux[4]))
+            query, (count, aux[0], aux[1], aux[1], aux[2], aux[3], aux[4]))
         count += 1
         print("Fact ", count)
-        # if count == 50:  # break for testing
-        #    break
     print("Fact load successfully")
 
 
