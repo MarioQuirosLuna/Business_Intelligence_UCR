@@ -14,6 +14,11 @@
 ## 💻 About the project.
 
    ### 📜 Descriptions.
+   * There is a data source in PosgreSQL.
+   * A data store must be created to be analyzed.
+   * An ETL process is responsible for extracting the data from the data source to transform it in the way that the business needs and then load it into the data warehouse.
+   * A multidimensional cube must be created that allows data to be analyzed and answers to questions of interest to the business.
+   * Reports are generated with the data provided through the Power BI tool.
    
    ### 🏆 Specifications.
    
@@ -21,24 +26,44 @@
 
 
    ### ⭐ Languages.
+   ![Python](https://custom-icon-badges.herokuapp.com/badge/-Python-%233776AB?style=flat&logo=Python&logoColor=white&labelColor=111)
 
    ### 🎨 Frameworks.
    
    ### 💾 Databases and cloud hosting.
   
   ![MSSQL](https://custom-icon-badges.herokuapp.com/badge/-MSSQL-%23CC2927?style=flat&logo=MicrosoftSQLServer&logoColor=white&labelColor=111)
+  ![PostgreSQL](https://custom-icon-badges.herokuapp.com/badge/-PostgreSQL-%234169E1?style=flat&logo=PostgreSQL&logoColor=white&labelColor=111)
   
    ### 🛠️ Software and Tools.
    
   ![Git](https://custom-icon-badges.herokuapp.com/badge/-Git-%23F05032?style=flat&logo=git&logoColor=white&labelColor=111)
   ![GitHub](https://custom-icon-badges.herokuapp.com/badge/-GitHub-%23181717?style=flat&logo=github&logoColor=white&labelColor=111)
   ![Markdown](https://custom-icon-badges.herokuapp.com/badge/-Markdown-%23000000?style=flat&logo=Markdown&logoColor=white&labelColor=111)
+  ![PowerBI](https://custom-icon-badges.herokuapp.com/badge/-PowerBI-%23F2C811?style=flat&logo=PowerBI&logoColor=white&labelColor=111)
 
   ![VisualStudioCode](https://custom-icon-badges.herokuapp.com/badge/-VisualStudioCode-%23007ACC?style=flat&logo=VisualStudioCode&logoColor=white&labelColor=111)
 
 ## 🚀 Getting Started.
 
-   # ETL Python
+   # 1. Databases
+   
+   ### 📌 Prerequisites and dependencies.
+   
+   - Have PGAdmin installed.
+   - Have SQLServer installed.
+   
+   ### 👉 Installation.
+   
+   ### ⚡ Executing.
+   
+   - Execute the script for create database and insert the data in PostgreSQL in descending order.
+
+   ![imagen](https://user-images.githubusercontent.com/37676736/169353912-c3a0824c-da4a-4f1f-9762-b04e673448f0.png)
+
+   - Create your database for data warehouse in SQL Server.
+   
+   # 2. ETL Python
 
    ### 📌 Prerequisites and dependencies.
    
@@ -103,5 +128,3 @@
 
 ## 💜 Acknowledgments.
    - https://simpleicons.org/
-   - b
-   - c
