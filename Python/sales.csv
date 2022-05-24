@@ -1,0 +1,638 @@
+Sales_Head_id,Paid_In_Cash,Paid_Type_Description
+1,1,Cash
+2,1,Cash
+3,1,Cash
+4,1,Cash
+5,1,Cash
+6,1,Cash
+7,1,Cash
+8,1,Cash
+9,1,Cash
+10,1,Cash
+11,1,Cash
+12,0,Credit Card
+13,0,Credit Card
+14,0,Credit Card
+15,0,Credit Card
+16,0,Credit Card
+17,0,Credit Card
+18,1,Cash
+19,1,Cash
+20,1,Cash
+21,1,Cash
+22,1,Cash
+23,1,Cash
+24,1,Cash
+25,1,Cash
+26,1,Cash
+27,1,Cash
+28,0,Credit Card
+29,1,Cash
+30,1,Cash
+31,0,Credit Card
+32,0,Credit Card
+33,0,Credit Card
+34,0,Credit Card
+35,0,Credit Card
+36,0,Credit Card
+37,0,Credit Card
+38,0,Credit Card
+39,0,Credit Card
+40,0,Credit Card
+41,1,Cash
+42,0,Credit Card
+43,1,Cash
+44,1,Cash
+45,1,Cash
+46,0,Credit Card
+47,0,Credit Card
+48,0,Credit Card
+49,0,Credit Card
+50,0,Credit Card
+51,0,Credit Card
+52,1,Cash
+53,0,Credit Card
+54,0,Credit Card
+55,1,Cash
+56,0,Credit Card
+57,1,Cash
+58,1,Cash
+59,1,Cash
+60,1,Cash
+61,1,Cash
+62,0,Credit Card
+63,1,Cash
+64,1,Cash
+65,0,Credit Card
+66,1,Cash
+67,0,Credit Card
+68,1,Cash
+69,0,Credit Card
+70,0,Credit Card
+71,1,Cash
+72,1,Cash
+73,0,Credit Card
+74,0,Credit Card
+75,1,Cash
+76,0,Credit Card
+77,0,Credit Card
+78,0,Credit Card
+79,0,Credit Card
+80,0,Credit Card
+81,0,Credit Card
+82,0,Credit Card
+83,0,Credit Card
+84,0,Credit Card
+85,0,Credit Card
+86,0,Credit Card
+87,1,Cash
+88,1,Cash
+89,0,Credit Card
+90,0,Credit Card
+91,0,Credit Card
+92,0,Credit Card
+93,1,Cash
+94,1,Cash
+95,0,Credit Card
+96,1,Cash
+97,0,Credit Card
+98,0,Credit Card
+99,0,Credit Card
+100,0,Credit Card
+101,1,Cash
+102,1,Cash
+103,1,Cash
+104,1,Cash
+105,1,Cash
+106,1,Cash
+107,0,Credit Card
+108,0,Credit Card
+109,0,Credit Card
+110,1,Cash
+111,0,Credit Card
+112,1,Cash
+113,0,Credit Card
+114,0,Credit Card
+115,0,Credit Card
+116,0,Credit Card
+117,0,Credit Card
+118,0,Credit Card
+119,0,Credit Card
+120,0,Credit Card
+121,0,Credit Card
+122,0,Credit Card
+123,0,Credit Card
+124,0,Credit Card
+125,0,Credit Card
+126,1,Cash
+127,1,Cash
+128,1,Cash
+129,0,Credit Card
+130,1,Cash
+131,0,Credit Card
+132,0,Credit Card
+133,0,Credit Card
+134,0,Credit Card
+135,1,Cash
+136,0,Credit Card
+137,0,Credit Card
+138,0,Credit Card
+139,0,Credit Card
+140,0,Credit Card
+141,1,Cash
+142,0,Credit Card
+143,0,Credit Card
+144,1,Cash
+145,0,Credit Card
+146,1,Cash
+147,0,Credit Card
+148,1,Cash
+149,0,Credit Card
+150,0,Credit Card
+151,1,Cash
+152,1,Cash
+153,1,Cash
+154,0,Credit Card
+155,1,Cash
+156,1,Cash
+157,0,Credit Card
+158,0,Credit Card
+159,0,Credit Card
+160,1,Cash
+161,1,Cash
+162,0,Credit Card
+163,1,Cash
+164,0,Credit Card
+165,1,Cash
+166,1,Cash
+167,0,Credit Card
+168,0,Credit Card
+169,1,Cash
+170,1,Cash
+171,0,Credit Card
+172,0,Credit Card
+173,0,Credit Card
+174,0,Credit Card
+175,0,Credit Card
+176,0,Credit Card
+177,1,Cash
+178,1,Cash
+179,0,Credit Card
+180,1,Cash
+181,0,Credit Card
+182,1,Cash
+183,0,Credit Card
+184,0,Credit Card
+185,1,Cash
+186,1,Cash
+187,1,Cash
+188,1,Cash
+189,0,Credit Card
+190,0,Credit Card
+191,1,Cash
+192,0,Credit Card
+193,1,Cash
+194,1,Cash
+195,0,Credit Card
+196,1,Cash
+197,0,Credit Card
+198,0,Credit Card
+199,0,Credit Card
+200,1,Cash
+201,0,Credit Card
+202,1,Cash
+203,0,Credit Card
+204,0,Credit Card
+205,0,Credit Card
+206,1,Cash
+207,0,Credit Card
+208,0,Credit Card
+209,0,Credit Card
+210,0,Credit Card
+211,1,Cash
+212,1,Cash
+213,1,Cash
+214,0,Credit Card
+215,0,Credit Card
+216,0,Credit Card
+217,1,Cash
+218,0,Credit Card
+219,1,Cash
+220,0,Credit Card
+221,1,Cash
+222,0,Credit Card
+223,0,Credit Card
+224,0,Credit Card
+225,1,Cash
+226,0,Credit Card
+227,0,Credit Card
+228,0,Credit Card
+229,1,Cash
+230,1,Cash
+231,0,Credit Card
+232,0,Credit Card
+233,0,Credit Card
+234,0,Credit Card
+235,1,Cash
+236,0,Credit Card
+237,1,Cash
+238,0,Credit Card
+239,0,Credit Card
+240,1,Cash
+241,0,Credit Card
+242,0,Credit Card
+243,1,Cash
+244,0,Credit Card
+245,0,Credit Card
+246,0,Credit Card
+247,0,Credit Card
+248,0,Credit Card
+249,0,Credit Card
+250,1,Cash
+251,0,Credit Card
+252,0,Credit Card
+253,0,Credit Card
+254,1,Cash
+255,1,Cash
+256,0,Credit Card
+257,0,Credit Card
+258,0,Credit Card
+259,1,Cash
+260,0,Credit Card
+261,0,Credit Card
+262,0,Credit Card
+263,0,Credit Card
+264,1,Cash
+265,1,Cash
+266,0,Credit Card
+267,0,Credit Card
+268,1,Cash
+269,1,Cash
+270,0,Credit Card
+271,0,Credit Card
+272,1,Cash
+273,0,Credit Card
+274,1,Cash
+275,0,Credit Card
+276,1,Cash
+277,0,Credit Card
+278,0,Credit Card
+279,0,Credit Card
+280,1,Cash
+281,0,Credit Card
+282,0,Credit Card
+283,0,Credit Card
+284,0,Credit Card
+285,0,Credit Card
+286,0,Credit Card
+287,1,Cash
+288,1,Cash
+289,1,Cash
+290,0,Credit Card
+291,1,Cash
+292,0,Credit Card
+293,1,Cash
+294,0,Credit Card
+295,1,Cash
+296,1,Cash
+297,1,Cash
+298,0,Credit Card
+299,1,Cash
+300,0,Credit Card
+301,0,Credit Card
+302,0,Credit Card
+303,0,Credit Card
+304,1,Cash
+305,0,Credit Card
+306,1,Cash
+307,0,Credit Card
+308,1,Cash
+309,1,Cash
+310,1,Cash
+311,0,Credit Card
+312,0,Credit Card
+313,0,Credit Card
+314,1,Cash
+315,0,Credit Card
+316,1,Cash
+317,1,Cash
+318,1,Cash
+319,0,Credit Card
+320,0,Credit Card
+321,1,Cash
+322,0,Credit Card
+323,1,Cash
+324,0,Credit Card
+325,1,Cash
+326,0,Credit Card
+327,0,Credit Card
+328,0,Credit Card
+329,1,Cash
+330,1,Cash
+331,0,Credit Card
+332,0,Credit Card
+333,0,Credit Card
+334,0,Credit Card
+335,1,Cash
+336,0,Credit Card
+337,1,Cash
+338,0,Credit Card
+339,0,Credit Card
+340,0,Credit Card
+341,0,Credit Card
+342,1,Cash
+343,1,Cash
+344,0,Credit Card
+345,1,Cash
+346,1,Cash
+347,0,Credit Card
+348,1,Cash
+349,1,Cash
+350,0,Credit Card
+351,0,Credit Card
+352,1,Cash
+353,0,Credit Card
+354,0,Credit Card
+355,0,Credit Card
+356,1,Cash
+357,1,Cash
+358,1,Cash
+359,0,Credit Card
+360,1,Cash
+361,0,Credit Card
+362,0,Credit Card
+363,0,Credit Card
+364,1,Cash
+365,0,Credit Card
+366,1,Cash
+367,1,Cash
+368,0,Credit Card
+369,0,Credit Card
+370,0,Credit Card
+371,1,Cash
+372,1,Cash
+373,0,Credit Card
+374,1,Cash
+375,0,Credit Card
+376,0,Credit Card
+377,0,Credit Card
+378,0,Credit Card
+379,1,Cash
+380,0,Credit Card
+381,1,Cash
+382,1,Cash
+383,1,Cash
+384,1,Cash
+385,0,Credit Card
+386,0,Credit Card
+387,0,Credit Card
+388,1,Cash
+389,1,Cash
+390,0,Credit Card
+391,1,Cash
+392,0,Credit Card
+393,1,Cash
+394,0,Credit Card
+395,1,Cash
+396,0,Credit Card
+397,0,Credit Card
+398,0,Credit Card
+399,0,Credit Card
+400,0,Credit Card
+401,1,Cash
+402,0,Credit Card
+403,0,Credit Card
+404,0,Credit Card
+405,0,Credit Card
+406,0,Credit Card
+407,0,Credit Card
+408,1,Cash
+409,1,Cash
+410,0,Credit Card
+411,1,Cash
+412,1,Cash
+413,0,Credit Card
+414,0,Credit Card
+415,1,Cash
+416,0,Credit Card
+417,0,Credit Card
+418,0,Credit Card
+419,1,Cash
+420,1,Cash
+421,1,Cash
+422,1,Cash
+423,0,Credit Card
+424,0,Credit Card
+425,0,Credit Card
+426,1,Cash
+427,1,Cash
+428,0,Credit Card
+429,1,Cash
+430,0,Credit Card
+431,0,Credit Card
+432,0,Credit Card
+433,1,Cash
+434,0,Credit Card
+435,0,Credit Card
+436,1,Cash
+437,0,Credit Card
+438,1,Cash
+439,0,Credit Card
+440,1,Cash
+441,0,Credit Card
+442,0,Credit Card
+443,0,Credit Card
+444,0,Credit Card
+445,0,Credit Card
+446,0,Credit Card
+447,1,Cash
+448,1,Cash
+449,0,Credit Card
+450,0,Credit Card
+451,0,Credit Card
+452,0,Credit Card
+453,1,Cash
+454,0,Credit Card
+455,0,Credit Card
+456,0,Credit Card
+457,0,Credit Card
+458,0,Credit Card
+459,0,Credit Card
+460,1,Cash
+461,1,Cash
+462,0,Credit Card
+463,1,Cash
+464,0,Credit Card
+465,0,Credit Card
+466,1,Cash
+467,1,Cash
+468,0,Credit Card
+469,0,Credit Card
+470,0,Credit Card
+471,1,Cash
+472,0,Credit Card
+473,0,Credit Card
+474,0,Credit Card
+475,0,Credit Card
+476,0,Credit Card
+477,0,Credit Card
+478,0,Credit Card
+479,0,Credit Card
+480,0,Credit Card
+481,0,Credit Card
+482,1,Cash
+483,0,Credit Card
+484,0,Credit Card
+485,0,Credit Card
+486,0,Credit Card
+487,1,Cash
+488,0,Credit Card
+489,1,Cash
+490,1,Cash
+491,1,Cash
+492,1,Cash
+493,0,Credit Card
+494,0,Credit Card
+495,1,Cash
+496,0,Credit Card
+497,1,Cash
+498,1,Cash
+499,0,Credit Card
+500,1,Cash
+501,0,Credit Card
+502,1,Cash
+503,0,Credit Card
+504,1,Cash
+505,0,Credit Card
+506,1,Cash
+507,0,Credit Card
+508,0,Credit Card
+509,0,Credit Card
+510,1,Cash
+511,0,Credit Card
+512,1,Cash
+513,1,Cash
+514,1,Cash
+515,0,Credit Card
+516,0,Credit Card
+517,1,Cash
+518,0,Credit Card
+519,0,Credit Card
+520,1,Cash
+521,0,Credit Card
+522,1,Cash
+523,1,Cash
+524,0,Credit Card
+525,0,Credit Card
+526,0,Credit Card
+527,0,Credit Card
+528,1,Cash
+529,1,Cash
+530,0,Credit Card
+531,1,Cash
+532,1,Cash
+533,1,Cash
+534,0,Credit Card
+535,0,Credit Card
+536,1,Cash
+537,0,Credit Card
+538,0,Credit Card
+539,1,Cash
+540,0,Credit Card
+541,0,Credit Card
+542,0,Credit Card
+543,1,Cash
+544,0,Credit Card
+545,1,Cash
+546,1,Cash
+547,1,Cash
+548,1,Cash
+549,0,Credit Card
+550,1,Cash
+551,1,Cash
+552,0,Credit Card
+553,0,Credit Card
+554,0,Credit Card
+555,0,Credit Card
+556,0,Credit Card
+557,0,Credit Card
+558,0,Credit Card
+559,0,Credit Card
+560,0,Credit Card
+561,0,Credit Card
+562,1,Cash
+563,0,Credit Card
+564,0,Credit Card
+565,1,Cash
+566,0,Credit Card
+567,1,Cash
+568,0,Credit Card
+569,0,Credit Card
+570,0,Credit Card
+571,0,Credit Card
+572,0,Credit Card
+573,1,Cash
+574,0,Credit Card
+575,0,Credit Card
+576,1,Cash
+577,0,Credit Card
+578,0,Credit Card
+579,1,Cash
+580,1,Cash
+581,0,Credit Card
+582,0,Credit Card
+583,0,Credit Card
+584,1,Cash
+585,1,Cash
+586,1,Cash
+587,0,Credit Card
+588,1,Cash
+589,0,Credit Card
+590,1,Cash
+591,1,Cash
+592,0,Credit Card
+593,1,Cash
+594,1,Cash
+595,0,Credit Card
+596,0,Credit Card
+597,0,Credit Card
+598,1,Cash
+599,0,Credit Card
+600,0,Credit Card
+601,0,Credit Card
+602,0,Credit Card
+603,1,Cash
+604,0,Credit Card
+605,1,Cash
+606,0,Credit Card
+607,1,Cash
+608,1,Cash
+609,0,Credit Card
+610,0,Credit Card
+611,1,Cash
+612,1,Cash
+613,0,Credit Card
+614,0,Credit Card
+615,1,Cash
+616,1,Cash
+617,1,Cash
+618,1,Cash
+619,1,Cash
+620,0,Credit Card
+621,0,Credit Card
+622,0,Credit Card
+623,0,Credit Card
+624,1,Cash
+625,1,Cash
+626,0,Credit Card
+627,1,Cash
+628,0,Credit Card
+629,0,Credit Card
+630,1,Cash
+631,0,Credit Card
+632,0,Credit Card
+633,0,Credit Card
+634,0,Credit Card
+635,1,Cash
+636,0,Credit Card
+637,0,Credit Card

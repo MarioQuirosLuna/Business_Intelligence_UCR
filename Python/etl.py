@@ -2,6 +2,8 @@ from decouple import config
 from datetime import datetime
 import psycopg2
 import pyodbc
+import csv
+import os
 
 
 def connectPosgreSQL():
@@ -20,28 +22,77 @@ def connectSQLServer():
     )
 
 
+def connectSQLServerLocal():
+    return pyodbc.connect('DRIVER={SQL Server};SERVER='+config('SQLSERVER_HOST_LOCAL')+';DATABASE='+config('SQLSERVER_DATABASE_LOCAL')+';Trusted_Connection=yes;')
+
+
 def getProducts(cursorPosgreSQL):
     query = "SELECT Product_Id, Name, Price FROM PRODUCTS.tb_Products"
     cursorPosgreSQL.execute(query)
-    return cursorPosgreSQL.fetchall()
+    products = cursorPosgreSQL.fetchall()
+
+    with open('products.csv', 'w') as csvProducts:
+        fieldnames = ['Product_Id', 'Name', 'Price']
+        writer = csv.DictWriter(csvProducts, fieldnames=fieldnames)
+        writer.writeheader()
+        for aux in products:
+            writer.writerow(
+                {'Product_Id': aux[0], 'Name': aux[1], 'Price': aux[2]})
+
+
+def addDescription(val):
+    if val == '1':
+        return "Cash"
+    else:
+        return "Credit Card"
 
 
 def getSalesHead(cursorPosgreSQL):
     query = "SELECT Sales_Head_Id, Paid_In_Cash FROM SALES.Sales_Head"
     cursorPosgreSQL.execute(query)
-    return cursorPosgreSQL.fetchall()
+    sales = cursorPosgreSQL.fetchall()
+
+    with open('sales.csv', 'w') as csvSales:
+        fieldnames = ['Sales_Head_id', 'Paid_In_Cash', 'Paid_Type_Description']
+        writer = csv.DictWriter(csvSales, fieldnames=fieldnames)
+        writer.writeheader()
+        for aux in sales:
+            writer.writerow(
+                {'Sales_Head_id': aux[0], 'Paid_In_Cash': aux[1], 'Paid_Type_Description': addDescription(aux[1])})
 
 
 def getDates(cursorPosgreSQL):
     query = "SELECT Sales_Head_Id, Date_Of_Sale FROM SALES.Sales_Head"
     cursorPosgreSQL.execute(query)
-    return cursorPosgreSQL.fetchall()
+    dates = cursorPosgreSQL.fetchall()
+
+    with open('dates.csv', 'w') as csvDates:
+        fieldnames = ['Sales_Head_Date_id',
+                      'Date_Of_Sale', 'Date_Year', 'Date_Month']
+        writer = csv.DictWriter(csvDates, fieldnames=fieldnames)
+        writer.writeheader()
+        for aux in dates:
+            writer.writerow(
+                {'Sales_Head_Date_id': aux[0], 'Date_Of_Sale': aux[1], 'Date_Year': aux[1].strftime('%Y'), 'Date_Month': aux[1].strftime('%m')})
 
 
 def getFactData(cursorPosgreSQL):
     query = "SELECT SD.Product_Id, SH.Sales_Head_Id, SD.Number_Of_Products, SD.SubTotal_Price, SH.Total_Price FROM SALES.Sales_Head AS SH INNER JOIN SALES.Sales_Detail AS SD ON SH.Sales_Head_Id = SD.Sales_Head_Id"
     cursorPosgreSQL.execute(query)
-    return cursorPosgreSQL.fetchall()
+    facts = cursorPosgreSQL.fetchall()
+
+    with open('facts.csv', 'w') as csvFacts:
+        fieldnames = ['Id', 'Product_id', 'Sales_Head_id', 'Sales_Head_Date_id',
+                      'Amount_Of_Sales', 'SubTotal_Price', 'Total_Price']
+        writer = csv.DictWriter(csvFacts, fieldnames=fieldnames)
+
+        writer.writeheader()
+        count = 0
+        for aux in facts:
+            writer.writerow(
+                {'Id': count, 'Product_id': aux[0], 'Sales_Head_id': aux[1], 'Sales_Head_Date_id': aux[1],
+                 'Amount_Of_Sales': aux[2], 'SubTotal_Price': aux[3], 'Total_Price': aux[4]})
+            count += 1
 
 
 def dropTables(cursorSQLServer):
@@ -56,55 +107,35 @@ def createTables(cursorSQLServer):
     print("Create table DIM_Products, DIM_Sales_Head, DIM_Dates, FACT_SALES successfully")
 
 
-def loadDIMProducts(cursorSQLServer, products):
-    for aux in products:
-        query = 'INSERT INTO SALES.DIM_Products VALUES(?,?,?);'
-        cursorSQLServer.execute(
-            query, (aux[0], aux[1], aux[2]))
+def loadDIMProducts(cursorSQLServer):
+    query = "BULK INSERT SALES.DIM_Products FROM '"+os.path.dirname(os.path.abspath(
+        __file__))+"\\products.csv' WITH (FIRSTROW = 2, FIELDTERMINATOR = ',', ROWTERMINATOR = '\n')"
+    cursorSQLServer.execute(query)
+    cursorSQLServer.commit()
     print("Products load successfully")
 
 
-def addDescription(val):
-    if val == '1':
-        return "Cash"
-    else:
-        return "Credit Card"
-
-
-def loadDIMSalesHead(cursorSQLServer, salesHead):
-    count = 0
-    for aux in salesHead:
-        query = 'INSERT INTO SALES.DIM_Sales_Head VALUES(?,?,?);'
-        cursorSQLServer.execute(
-            query, (aux[0], aux[1], addDescription(aux[1])))
-        count += 1
-        print("Sales Head ", count)
-        # if count == 55:  # break for testing
-        #    break
+def loadDIMSalesHead(cursorSQLServer):
+    query = "BULK INSERT SALES.DIM_Sales_Head FROM '"+os.path.dirname(os.path.abspath(
+        __file__))+"\\sales.csv' WITH (FIRSTROW = 2, FIELDTERMINATOR = ',', ROWTERMINATOR = '\n')"
+    cursorSQLServer.execute(query)
+    cursorSQLServer.commit()
     print("SalesHead load successfully")
 
 
-def loadDIMDates(cursorSQLServer, dates):
-    count = 0
-    for aux in dates:
-        query = 'INSERT INTO SALES.DIM_DATES VALUES(?,?,?,?)'
-        cursorSQLServer.execute(
-            query, (aux[0], aux[1], aux[1].strftime('%Y'), aux[1].strftime('%m')))
-        count += 1
-        print("Date ", count)
-        # if count == 50:  # break for testing
-        #    break
+def loadDIMDates(cursorSQLServer):
+    query = "BULK INSERT SALES.DIM_Dates FROM '"+os.path.dirname(os.path.abspath(
+        __file__))+"\\dates.csv' WITH (FIRSTROW = 2, FIELDTERMINATOR = ',', ROWTERMINATOR = '\n')"
+    cursorSQLServer.execute(query)
+    cursorSQLServer.commit()
     print("Dates load successfully")
 
 
-def loadDIMFactData(cursorSQLServer, factData):
-    count = 0
-    for aux in factData:
-        query = 'INSERT INTO SALES.FACT_SALES VALUES(?,?,?,?,?,?,?)'
-        cursorSQLServer.execute(
-            query, (count, aux[0], aux[1], aux[1], aux[2], aux[3], aux[4]))
-        count += 1
-        print("Fact ", count)
+def loadDIMFactData(cursorSQLServer):
+    query = "BULK INSERT SALES.FACT_SALES FROM '"+os.path.dirname(os.path.abspath(
+        __file__))+"\\facts.csv' WITH (FIRSTROW = 2, FIELDTERMINATOR = ',', ROWTERMINATOR = '\n')"
+    cursorSQLServer.execute(query)
+    cursorSQLServer.commit()
     print("Fact load successfully")
 
 
@@ -114,12 +145,13 @@ try:
     with connectionPostgreSQL.cursor() as cursorPosgreSQL:
         print(
             "\n*****************************\n Extract data in progress...\n*****************************\n")
-        products = getProducts(cursorPosgreSQL)
-        salesHead = getSalesHead(cursorPosgreSQL)
-        dates = getDates(cursorPosgreSQL)
-        factData = getFactData(cursorPosgreSQL)
+        getProducts(cursorPosgreSQL)
+        getSalesHead(cursorPosgreSQL)
+        getDates(cursorPosgreSQL)
+        getFactData(cursorPosgreSQL)
 
-        connectionSQLServer = connectSQLServer()
+        #connectionSQLServer = connectSQLServer()
+        connectionSQLServer = connectSQLServerLocal()
         print('Connection successfully to SQLServer')
 
         with connectionSQLServer.cursor() as cursorSQLServer:
@@ -129,12 +161,13 @@ try:
 
             print(
                 "\n*****************************\n Load data in progress...\n*****************************\n")
-            loadDIMProducts(cursorSQLServer, products)
-            loadDIMSalesHead(cursorSQLServer, salesHead)
-            loadDIMDates(cursorSQLServer, dates)
-            loadDIMFactData(cursorSQLServer, factData)
+            loadDIMProducts(cursorSQLServer)
+            loadDIMSalesHead(cursorSQLServer)
+            loadDIMDates(cursorSQLServer)
+            loadDIMFactData(cursorSQLServer)
 
-            print("Load data successfully")
+            print(
+                "\n*****************************\n Load data successfully\n*****************************\n")
 
 except Exception as ex:
     print("Error with connection ", ex)
