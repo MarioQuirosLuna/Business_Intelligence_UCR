@@ -1,0 +1,147 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c072f29d-b209-435c-8160-3e28cc5caef1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IF5100 2022 DATAWAREHOUSE NIKY</ID>
+  <Name>IF5100 2022 DATAWAREHOUSE NIKY</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>IF5100 2022 DATAWAREHOUSE NIKY</DataSourceID>
+  <Schema>
+    <xs:schema id="IF5100_x0020_2022_x0020_DATAWAREHOUSE_x0020_NIKY" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="IF5100_x0020_2022_x0020_DATAWAREHOUSE_x0020_NIKY" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2f5b1149-100b-4d1c-82e2-1c1f02190e7a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="SALES_DIM_DATES" msprop:design-time-name="51a0d6f6-61f5-44ea-8851-2475cadf1d9c" msprop:DbTableName="DIM_DATES" msprop:FriendlyName="DIM_DATES" msprop:DbSchemaName="SALES" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Sales_Head_Date_id" msprop:design-time-name="afe80c8c-d5d2-4aff-8c10-368369fb1554" msprop:DbColumnName="Sales_Head_Date_id" msprop:FriendlyName="Sales_Head_Date_id" type="xs:int" />
+                  <xs:element name="Date_Of_Sale" msprop:design-time-name="4d1c72a9-5be8-4e60-9254-54f693f26291" msprop:DbColumnName="Date_Of_Sale" msprop:FriendlyName="Date_Of_Sale" type="xs:dateTime" />
+                  <xs:element name="Date_Year" msprop:design-time-name="61b057a9-1840-498d-86d3-a002fb84f556" msprop:DbColumnName="Date_Year" msprop:FriendlyName="Date_Year">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Date_Month" msprop:design-time-name="31d588ec-b39b-48b1-91c7-ff124c8834f8" msprop:DbColumnName="Date_Month" msprop:FriendlyName="Date_Month">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="SALES_DIM_Products" msprop:design-time-name="92a8055f-6aed-4ad9-9550-b70430c07f6d" msprop:DbTableName="DIM_Products" msprop:FriendlyName="DIM_Products" msprop:DbSchemaName="SALES" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Product_id" msprop:design-time-name="8bf72541-1a2f-4cfb-9149-75e2e1c6ce42" msprop:DbColumnName="Product_id" msprop:FriendlyName="Product_id" type="xs:int" />
+                  <xs:element name="Name_Product" msprop:design-time-name="40e13efb-edab-45d7-a832-7c0b276fb315" msprop:DbColumnName="Name_Product" msprop:FriendlyName="Name_Product">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Price" msprop:design-time-name="6cd7eeee-c695-4f08-a7d3-0505ac8cac80" msprop:DbColumnName="Price" msprop:FriendlyName="Price" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="SALES_DIM_Sales_Head" msprop:design-time-name="86c00a7e-1007-4efb-be39-3b77aeb45e3d" msprop:DbTableName="DIM_Sales_Head" msprop:FriendlyName="DIM_Sales_Head" msprop:DbSchemaName="SALES" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Sales_Head_id" msprop:design-time-name="51df7770-ff92-47d2-b289-61462e8f33c0" msprop:DbColumnName="Sales_Head_id" msprop:FriendlyName="Sales_Head_id" type="xs:int" />
+                  <xs:element name="Paid_In_Cash" msprop:design-time-name="1926e9af-7f53-4a7d-9f53-50d1e3c08b43" msprop:DbColumnName="Paid_In_Cash" msprop:FriendlyName="Paid_In_Cash" type="xs:boolean" />
+                  <xs:element name="Paid_Type_Description" msprop:design-time-name="f4275886-0657-4b05-a80a-d4679fa7542e" msprop:DbColumnName="Paid_Type_Description" msprop:FriendlyName="Paid_Type_Description">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="SALES_FACT_SALES" msprop:design-time-name="cfcd70b9-347f-4dee-beaa-b6960f84e5f8" msprop:DbTableName="FACT_SALES" msprop:FriendlyName="FACT_SALES" msprop:DbSchemaName="SALES" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="fce92fe2-a82a-4b5f-b721-48a2f3d537b2" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Product_id" msprop:design-time-name="0491707f-4ae6-418d-9b91-e40513167369" msprop:DbColumnName="Product_id" msprop:FriendlyName="Product_id" type="xs:int" />
+                  <xs:element name="Sales_Head_id" msprop:design-time-name="c2869d18-e115-422b-91db-f991bff781de" msprop:DbColumnName="Sales_Head_id" msprop:FriendlyName="Sales_Head_id" type="xs:int" />
+                  <xs:element name="Sales_Head_Date_id" msprop:design-time-name="8499e9ea-3a67-42be-a944-699e9af68eff" msprop:DbColumnName="Sales_Head_Date_id" msprop:FriendlyName="Sales_Head_Date_id" type="xs:int" />
+                  <xs:element name="Amount_Of_Sales" msprop:design-time-name="a86b0042-e022-4b91-888f-d74495ffb376" msprop:DbColumnName="Amount_Of_Sales" msprop:FriendlyName="Amount_Of_Sales" type="xs:int" />
+                  <xs:element name="SubTotal_Price" msprop:design-time-name="f02ed690-41d5-427d-9b68-2bdc26a500f7" msprop:DbColumnName="SubTotal_Price" msprop:FriendlyName="SubTotal_Price" type="xs:decimal" />
+                  <xs:element name="Total_Price" msprop:design-time-name="df31854e-e13b-4d85-a1f6-5662acbbe657" msprop:DbColumnName="Total_Price" msprop:FriendlyName="Total_Price" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//SALES_DIM_DATES" />
+          <xs:field xpath="Sales_Head_Date_id" />
+        </xs:unique>
+        <xs:unique name="SALES_DIM_Products_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//SALES_DIM_Products" />
+          <xs:field xpath="Product_id" />
+        </xs:unique>
+        <xs:unique name="SALES_DIM_Sales_Head_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//SALES_DIM_Sales_Head" />
+          <xs:field xpath="Sales_Head_id" />
+        </xs:unique>
+        <xs:unique name="SALES_FACT_SALES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//SALES_FACT_SALES" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:keyref name="FK__FACT_SALE__Produ__2B947552" refer="SALES_DIM_Products_Constraint1">
+          <xs:selector xpath=".//SALES_FACT_SALES" />
+          <xs:field xpath="Product_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_SALE__Sales__2C88998B" refer="SALES_DIM_Sales_Head_Constraint1">
+          <xs:selector xpath=".//SALES_FACT_SALES" />
+          <xs:field xpath="Sales_Head_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_SALE__Sales__2D7CBDC4" refer="Constraint1">
+          <xs:selector xpath=".//SALES_FACT_SALES" />
+          <xs:field xpath="Sales_Head_Date_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <IF5100_x0020_2022_x0020_DATAWAREHOUSE_x0020_NIKY xmlns="" />
+  </Schema>
+</DataSourceView>

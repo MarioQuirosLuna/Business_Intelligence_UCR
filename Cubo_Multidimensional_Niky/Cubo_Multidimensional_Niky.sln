@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cubo_Multidimensional_Niky", "Cubo_Multidimensional_Niky.dwproj", "{3937961B-C176-4763-B852-760A3D80D5EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3937961B-C176-4763-B852-760A3D80D5EB}.Development|Default.ActiveCfg = Development
+		{3937961B-C176-4763-B852-760A3D80D5EB}.Development|Default.Build.0 = Development
+		{3937961B-C176-4763-B852-760A3D80D5EB}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E653D94F-7E41-4F06-926C-AA65946FDC6D}
+	EndGlobalSection
+EndGlobal
