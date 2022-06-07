@@ -127,7 +127,7 @@
       python etl.py
    ```
    
-   3. Multidimensional cube
+   # 3. Multidimensional cube
    
    ### 📌 Prerequisites and dependencies.
    
@@ -142,7 +142,7 @@
    - Open solution Cubo_Multidimensional_Niky.sln in visual studio 2022.
    - Process Cube.
    
-   5. Visualization with Power BI
+   # 4. Visualization with Power BI
    
    ## 📌 Prerequisites and dependencies.
    
