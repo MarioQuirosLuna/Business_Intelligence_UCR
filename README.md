@@ -11,17 +11,13 @@
 
 ## ✨ Demo.
 
-* Visualization with Power BI
+| Visualization with Power BI |
+|-----------------------------|
+| ![Demo](https://user-images.githubusercontent.com/37676736/172446014-3d8bda24-224b-433e-a7b3-bfc2e86d98a5.png) |
 
-![Demo](https://user-images.githubusercontent.com/37676736/172446014-3d8bda24-224b-433e-a7b3-bfc2e86d98a5.png)
-
-* Data Warehouse Star Model
-
-![ModeloEstrella_DW_NIKY](https://user-images.githubusercontent.com/37676736/172446709-a6f0e01a-a23a-4316-8457-5d0127bffd04.PNG)
-
-* Entity relationship model
-
-![ModeloER](https://user-images.githubusercontent.com/37676736/172446350-4e1c2e47-d3ea-414b-91d5-7d92bda8d0d0.jpeg)
+| Data Warehouse Star Model | Entity relationship model |
+|---------------------------|---------------------------|
+| ![ModeloEstrella_DW_NIKY](https://user-images.githubusercontent.com/37676736/172446709-a6f0e01a-a23a-4316-8457-5d0127bffd04.PNG) | ![ModeloER](https://user-images.githubusercontent.com/37676736/172446350-4e1c2e47-d3ea-414b-91d5-7d92bda8d0d0.jpeg) |
 
 ## 💻 About the project.
 
@@ -109,11 +105,17 @@
       POSGRESQL_USER=""
       POSGRESQL_PASS=""
       POSGRESQL_DATABASE=""
+      
+      POSGRESQL_HOST_LOCAL=localhost
+      POSGRESQL_DATABASE_LOCAL=IF5100_2022_DATAWAREHOUSE_NIKY
 
       SQLSERVER_HOST=""
       SQLSERVER_DATABASE=""
       SQLSERVER_USER=""
       SQLSERVER_PASS=""
+      
+      SQLSERVER_HOST_LOCAL=localhost
+      SQLSERVER_DATABASE_LOCAL=IF5100_2022_DATAWAREHOUSE_NIKY
    ```
    - Execute the virtual environment 
       * On your local folder run script activate
@@ -124,6 +126,35 @@
    ```python
       python etl.py
    ```
+   
+   3. Multidimensional cube
+   
+   ### 📌 Prerequisites and dependencies.
+   
+   - Need install visual studio 2022.
+   
+   ### 👉 Installation.
+   
+   - Need extention Microsoft Analysis Services Project 2022.
+   
+   ### ⚡ Executing.
+   
+   - Open solution Cubo_Multidimensional_Niky.sln in visual studio 2022.
+   - Process Cube.
+   
+   5. Visualization with Power BI
+   
+   ## 📌 Prerequisites and dependencies.
+   
+   - Power BI Desktop
+   
+   ### 👉 Installation.
+   
+   - Open multidimensional cube.
+   
+   ### ⚡ Executing.
+   
+   - Create the visualization that is needed for the business.
 
 ## ☕ Collaborators.
 
