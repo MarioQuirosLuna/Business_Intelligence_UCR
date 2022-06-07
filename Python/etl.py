@@ -104,7 +104,7 @@ def dropTables(cursorSQLServer):
 def createTables(cursorSQLServer):
     query = 'EXEC sp_CreateTables'
     cursorSQLServer.execute(query)
-    print("Create table DIM_Products, DIM_Sales_Head, DIM_Dates, FACT_SALES successfully")
+    print("Create table DIM_Products, DIM_Payment_Method, DIM_Dates, FACT_SALES successfully")
 
 
 def loadDIMProducts(cursorSQLServer):
@@ -116,11 +116,11 @@ def loadDIMProducts(cursorSQLServer):
 
 
 def loadDIMSalesHead(cursorSQLServer):
-    query = "BULK INSERT SALES.DIM_Sales_Head FROM '"+os.path.dirname(os.path.abspath(
+    query = "BULK INSERT SALES.DIM_Payment_Method FROM '"+os.path.dirname(os.path.abspath(
         __file__))+"\\sales.csv' WITH (FIRSTROW = 2, FIELDTERMINATOR = ',', ROWTERMINATOR = '\n')"
     cursorSQLServer.execute(query)
     cursorSQLServer.commit()
-    print("SalesHead load successfully")
+    print("Payment Method load successfully")
 
 
 def loadDIMDates(cursorSQLServer):
@@ -167,7 +167,7 @@ try:
             loadDIMFactData(cursorSQLServer)
 
             print(
-                "\n*****************************\n Load data successfully\n*****************************\n")
+                "\n*****************************\n Load data successfully!!\n*****************************\n")
 
 except Exception as ex:
     print("Error with connection ", ex)

@@ -12,9 +12,9 @@ CREATE TABLE SALES.DIM_Products
 		Price NUMERIC(6,2) NOT NULL
 	)
 
-	CREATE TABLE SALES.DIM_Sales_Head
+	CREATE TABLE SALES.DIM_Payment_Method
 	(
-		Sales_Head_id INT PRIMARY KEY NOT NULL,
+		Payment_Method_id INT PRIMARY KEY NOT NULL,
 		Paid_In_Cash BIT NOT NULL,
 		Paid_Type_Description VARCHAR(50) NOT NULL
 	)
