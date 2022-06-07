@@ -12,10 +12,10 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>DIM DATES</ID>
+        <ID>DIM Sales Head</ID>
       </Dimension>
       <Dimension>
-        <ID>DIM Sales Head</ID>
+        <ID>DIM DATES</ID>
       </Dimension>
       <Dimension>
         <ID>DIM Products</ID>

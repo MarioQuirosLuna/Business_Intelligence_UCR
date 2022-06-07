@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>(local)</TargetServer>
+        <TargetServer>localhost</TargetServer>
         <TargetDatabase>Cubo_Multidimensional_Niky</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6a3bfab3-784d-4b97-b4af-647f232b8795" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80882433-ebf2-4ddf-a57a-c6b7075b5678" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DIM Sales Head</ID>
   <Name>DIM Sales Head</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3102" scrolltop="-5635" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="13573" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3922" scrolltop="-10398" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="23098" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-3102</Value>
+      <Value>-3922</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-5635</Value>
+      <Value>-10398</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="48daabe4-0a9b-40a2-80aa-e2f55304c057">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="866e1700-390a-41a6-b6dd-05fb5968d6b6">
     <DataSourceViewID>IF5100 2022 DATAWAREHOUSE NIKY</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="d5cb4b67-5d27-4ce1-a43c-4f4fd9971b4e">
+  <ErrorConfiguration dwd:design-time-name="17471d31-7554-43eb-9c1f-87695503edaa">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="66533d52-1770-4e8c-abca-fd3740d8d4e9">
+    <Attribute dwd:design-time-name="e88e6c72-9c58-445b-ab48-87152c17a97d">
       <ID>Sales Head Id</ID>
       <Name>Sales Head Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8f8a9324-a24f-4a52-a8c5-08743932ce2c">
+        <KeyColumn dwd:design-time-name="b0cf2c1e-64fe-4bfa-9d56-7a34142d1b37">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="83aa7bc8-dd51-4f83-bf0e-c2cebf2b6979">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13586c4e-f650-4812-b98f-66f15dde4d70">
             <TableID>SALES_DIM_Sales_Head</TableID>
             <ColumnID>Sales_Head_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="070386d8-6336-488f-bc2d-d32d892c48a0">
+        <AttributeRelationship dwd:design-time-name="f718887d-9f2e-4d04-ab8c-69c1997c98d8">
           <AttributeID>Paid In Cash</AttributeID>
           <Name>Paid In Cash</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2aff8f8d-148b-4a8f-88b8-63d979a684c3">
+        <AttributeRelationship dwd:design-time-name="53082bf1-8547-46b7-9b5b-a4f1e4e5fff1">
           <AttributeID>Paid Type Description</AttributeID>
           <Name>Paid Type Description</Name>
         </AttributeRelationship>
@@ -105,13 +105,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="08f000de-9f2a-46c0-829c-a1ce04a235bd">
+    <Attribute dwd:design-time-name="998b6329-830b-4371-a7f5-ed12d5542db0">
       <ID>Paid In Cash</ID>
       <Name>Paid In Cash</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b2dd4798-724f-4092-9858-a8693bd0b3dd">
+        <KeyColumn dwd:design-time-name="a9002888-3609-481e-a56c-bf1b5c426123">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ecf8e13-4d34-435a-b2b2-379c30c5df9e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="61bbab55-c99d-43af-8bf1-4d15abe2cde4">
             <TableID>SALES_DIM_Sales_Head</TableID>
             <ColumnID>Paid_In_Cash</ColumnID>
           </Source>
@@ -120,14 +120,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b9a8726c-dcd9-4852-99e7-2c126ff174ba">
+    <Attribute dwd:design-time-name="91d1e0cf-cb3f-4f0e-8a89-fb82a8e0e75a">
       <ID>Paid Type Description</ID>
       <Name>Paid Type Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="33b746a4-7880-41a5-9506-706d3d820b5f">
+        <KeyColumn dwd:design-time-name="7b412b13-b859-4f3e-a51c-9c4b5544d242">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8ed9c8f-8523-4ea8-8415-5fdbe1e9ac7e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e335a94-a584-47a7-9672-66d3d9d68756">
             <TableID>SALES_DIM_Sales_Head</TableID>
             <ColumnID>Paid_Type_Description</ColumnID>
           </Source>
