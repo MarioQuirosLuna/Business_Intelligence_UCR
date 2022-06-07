@@ -16,11 +16,10 @@ BEGIN
 	BEGIN
 		DROP TABLE [SALES].[DIM_DATES];
 	END
-	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[SALES].[DIM_Sales_Head]') AND type in (N'U'))
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[SALES].[DIM_Payment_Method]') AND type in (N'U'))
 	BEGIN
-		DROP TABLE [SALES].[DIM_Sales_Head];
+		DROP TABLE [SALES].[DIM_Payment_Method];
 	END
 END
 GO
-
 
