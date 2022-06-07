@@ -51,6 +51,7 @@
   ![PowerBI](https://custom-icon-badges.herokuapp.com/badge/-PowerBI-%23F2C811?style=flat&logo=PowerBI&logoColor=white&labelColor=111)
 
   ![VisualStudioCode](https://custom-icon-badges.herokuapp.com/badge/-VisualStudioCode-%23007ACC?style=flat&logo=VisualStudioCode&logoColor=white&labelColor=111)
+  ![VisualStudio](https://custom-icon-badges.herokuapp.com/badge/-VisualStudio-%235C2D91?style=flat&logo=VisualStudio&logoColor=white&labelColor=111)
 
 ## 🚀 Getting Started.
 
