@@ -11,6 +11,18 @@
 
 ## ✨ Demo.
 
+* Visualization with Power BI
+
+![Demo](https://user-images.githubusercontent.com/37676736/172446014-3d8bda24-224b-433e-a7b3-bfc2e86d98a5.png)
+
+* Data Warehouse Star Model
+
+![ModeloEstrella_DW_NIKY](https://user-images.githubusercontent.com/37676736/172446709-a6f0e01a-a23a-4316-8457-5d0127bffd04.PNG)
+
+* Entity relationship model
+
+![ModeloER](https://user-images.githubusercontent.com/37676736/172446350-4e1c2e47-d3ea-414b-91d5-7d92bda8d0d0.jpeg)
+
 ## 💻 About the project.
 
    ### 📜 Descriptions.
