@@ -61,6 +61,7 @@
    
    - Have PGAdmin installed.
    - Have SQLServer installed.
+      - SQLServer with analytics services.
    
    ### 👉 Installation.
    
