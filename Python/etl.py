@@ -167,7 +167,7 @@ try:
             loadDIMFactData(cursorSQLServer)
 
             print(
-                "\n*****************************\n Load data successfully\n*****************************\n")
+                "\n*****************************\n Load data successfully!!\n*****************************\n")
 
 except Exception as ex:
     print("Error with connection ", ex)
