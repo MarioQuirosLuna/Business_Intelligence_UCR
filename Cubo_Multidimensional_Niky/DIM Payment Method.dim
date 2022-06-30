@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80882433-ebf2-4ddf-a57a-c6b7075b5678" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>DIM Sales Head</ID>
-  <Name>DIM Sales Head</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dbece255-9e86-4711-8935-f7fee1e7eb6c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM Payment Method</ID>
+  <Name>DIM Payment Method</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -19,13 +19,13 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Sales_Head" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4128" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_Payment_Method" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4128" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e000020100000fe080000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="SALES_DIM_Sales_Head" vartype="8" />
+                <property name="LogicalObject" value="SALES_DIM_Payment_Method" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="866e1700-390a-41a6-b6dd-05fb5968d6b6">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4eef1adc-922d-4855-9b45-1fc0d57694ce">
     <DataSourceViewID>IF5100 2022 DATAWAREHOUSE NIKY</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="17471d31-7554-43eb-9c1f-87695503edaa">
+  <ErrorConfiguration dwd:design-time-name="0938bf08-fb04-43b7-ae45-4ccb30cc283a">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="e88e6c72-9c58-445b-ab48-87152c17a97d">
-      <ID>Sales Head Id</ID>
-      <Name>Sales Head Id</Name>
+    <Attribute dwd:design-time-name="3cbb4c4c-10c0-4beb-9e7d-03f412b475d9">
+      <ID>Payment Method Id</ID>
+      <Name>Payment Method Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b0cf2c1e-64fe-4bfa-9d56-7a34142d1b37">
+        <KeyColumn dwd:design-time-name="1e1f768e-8f5c-4e76-882a-689a7eea9575">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="13586c4e-f650-4812-b98f-66f15dde4d70">
-            <TableID>SALES_DIM_Sales_Head</TableID>
-            <ColumnID>Sales_Head_id</ColumnID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be3da793-39ca-486f-9406-09a9de95d3b3">
+            <TableID>SALES_DIM_Payment_Method</TableID>
+            <ColumnID>Payment_Method_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="f718887d-9f2e-4d04-ab8c-69c1997c98d8">
+        <AttributeRelationship dwd:design-time-name="0271f361-cc43-4fef-928f-91b08ccf597f">
           <AttributeID>Paid In Cash</AttributeID>
           <Name>Paid In Cash</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="53082bf1-8547-46b7-9b5b-a4f1e4e5fff1">
+        <AttributeRelationship dwd:design-time-name="d6ea30da-c228-4ef1-983f-d102d15257a1">
           <AttributeID>Paid Type Description</AttributeID>
           <Name>Paid Type Description</Name>
         </AttributeRelationship>
@@ -105,14 +105,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="998b6329-830b-4371-a7f5-ed12d5542db0">
+    <Attribute dwd:design-time-name="ff393c8e-7197-4234-8620-d8e28b70e755">
       <ID>Paid In Cash</ID>
       <Name>Paid In Cash</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a9002888-3609-481e-a56c-bf1b5c426123">
+        <KeyColumn dwd:design-time-name="fe7f32ac-4236-407a-930e-e5018ab15262">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="61bbab55-c99d-43af-8bf1-4d15abe2cde4">
-            <TableID>SALES_DIM_Sales_Head</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3faf6255-4747-4ca2-b515-96258dee496b">
+            <TableID>SALES_DIM_Payment_Method</TableID>
             <ColumnID>Paid_In_Cash</ColumnID>
           </Source>
         </KeyColumn>
@@ -120,15 +120,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="91d1e0cf-cb3f-4f0e-8a89-fb82a8e0e75a">
+    <Attribute dwd:design-time-name="04af4a7c-7877-4adf-adaf-914e4fd5bc0b">
       <ID>Paid Type Description</ID>
       <Name>Paid Type Description</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7b412b13-b859-4f3e-a51c-9c4b5544d242">
+        <KeyColumn dwd:design-time-name="fb72d3bf-ce64-4e12-b2c1-096ee6638a1f">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e335a94-a584-47a7-9672-66d3d9d68756">
-            <TableID>SALES_DIM_Sales_Head</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16a56b37-1e2b-41f6-9ccf-e01aa52f0cca">
+            <TableID>SALES_DIM_Payment_Method</TableID>
             <ColumnID>Paid_Type_Description</ColumnID>
           </Source>
         </KeyColumn>
