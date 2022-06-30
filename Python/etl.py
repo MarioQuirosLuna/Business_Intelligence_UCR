@@ -22,6 +22,15 @@ def connectSQLServer():
     )
 
 
+def connectPosgreSQLLocal():
+    return psycopg2.connect(
+        host=config('POSGRESQL_HOST_LOCAL'),
+        user=config('POSGRESQL_USER_LOCAL'),
+        password=config('POSGRESQL_PASS_LOCAL'),
+        database=config('POSGRESQL_DATABASE_LOCAL')
+    )
+
+
 def connectSQLServerLocal():
     return pyodbc.connect('DRIVER={SQL Server};SERVER='+config('SQLSERVER_HOST_LOCAL')+';DATABASE='+config('SQLSERVER_DATABASE_LOCAL')+';Trusted_Connection=yes;')
 
@@ -141,6 +150,7 @@ def loadDIMFactData(cursorSQLServer):
 
 try:
     connectionPostgreSQL = connectPosgreSQL()
+    #connectionPostgreSQL = connectPosgreSQLLocal()
     print('Connection successfully to PosgreSQL')
     with connectionPostgreSQL.cursor() as cursorPosgreSQL:
         print(
