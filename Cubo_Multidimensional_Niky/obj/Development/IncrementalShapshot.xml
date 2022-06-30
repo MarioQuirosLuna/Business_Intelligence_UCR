@@ -19,42 +19,66 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+<<<<<<< HEAD
+        <TimeStamp>im2ee+x44pKxACeyO85txiBuHj4=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
         <TimeStamp>im2ee+x44pKxACeyO85txiBuHj4=07/06/2022 11:24:1007/06/2022 9:30:48</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
         <ID>
           <String>IF5100 2022 DATAWAREHOUSE NIKY</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+<<<<<<< HEAD
+        <TimeStamp>FMGKTcdgY46YNskdXH/Y/QNRDsc=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
         <TimeStamp>FMGKTcdgY46YNskdXH/Y/QNRDsc=07/06/2022 11:24:1007/06/2022 9:30:59</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
         <ID>
           <String>IF5100 2022 DATAWAREHOUSE NIKY</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
+<<<<<<< HEAD
+        <TimeStamp>05OpBudEvt4dtkXIi4ab5r+mrFM=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
         <TimeStamp>05OpBudEvt4dtkXIi4ab5r+mrFM=07/06/2022 11:24:1007/06/2022 9:31:14</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
         <ID>
           <String>DIM Sales Head</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
+<<<<<<< HEAD
+        <TimeStamp>al/oEIdYKOCVXTv7SqpvQtyC+98=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
         <TimeStamp>al/oEIdYKOCVXTv7SqpvQtyC+98=07/06/2022 11:24:1007/06/2022 9:31:14</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
         <ID>
           <String>DIM DATES</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
+<<<<<<< HEAD
+        <TimeStamp>ab412eTTOOYYgtFDGnmO0J79Cgs=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
         <TimeStamp>ab412eTTOOYYgtFDGnmO0J79Cgs=07/06/2022 11:24:1007/06/2022 9:31:14</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
         <ID>
           <String>DIM Products</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
+<<<<<<< HEAD
+        <TimeStamp>qLh+Y6RQo8tciZcnEmBcSz9gSko=10/6/2022 08:56:386/6/2022 09:39:52bBFOBYWfH/DKLL87WRHfEmWoek8=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
         <TimeStamp>qLh+Y6RQo8tciZcnEmBcSz9gSko=07/06/2022 11:24:1007/06/2022 9:31:14bBFOBYWfH/DKLL87WRHfEmWoek8=07/06/2022 11:24:1007/06/2022 9:31:14</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
         <ID>
           <String>IF5100 2022 DATAWAREHOUSE NIKY</String>
         </ID>
@@ -62,7 +86,11 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
+<<<<<<< HEAD
+      <TimeStamp>ZQQOzOsGts2JAPb7hLQhje3zluU=10/6/2022 08:56:386/6/2022 09:39:52</TimeStamp>
+=======
       <TimeStamp>ZQQOzOsGts2JAPb7hLQhje3zluU=07/06/2022 11:24:1007/06/2022 9:29:23</TimeStamp>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
       <ID>
         <String>Cubo_Multidimensional_Niky</String>
       </ID>
@@ -71,5 +99,9 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
+<<<<<<< HEAD
+  <LastDeployed>2022-06-30T22:28:48.47Z</LastDeployed>
+=======
   <LastDeployed>2022-06-30T21:22:59.443333Z</LastDeployed>
+>>>>>>> 7cebcb6c8397afaca383b57b957dca040c107179
 </DeploymentSnapshot>
